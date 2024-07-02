@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(40, 20px); /* 40 columns, each 20px wide */
+    gap: 2px; /* Space between boxes */
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    transition: background-color 1s; /* Smooth transition for 1 second */
+}
+
+.square:hover {
+    background-color: #3498db; /* Change to desired color on hover */
+}
